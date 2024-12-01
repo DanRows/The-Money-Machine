@@ -1,0 +1,53 @@
+providers:
+  groq:
+    type: "groq"
+    api_key: "${GROQ_API_KEY}"
+    default_model: "mixtral-8x7b-32768"
+    cost_per_token: 0.0001
+    models:
+      - "mixtral-8x7b-32768"
+      - "llama2-70b-4096"
+  
+  sambanova:
+    type: "sambanova"
+    api_key: "${SAMBANOVA_API_KEY}"
+    base_url: "https://api.sambanova.ai"
+    default_model: "sambanova-gpt"
+    models:
+      - "sambanova-gpt"
+      - "sambanova-gpt-embed"
+  
+  together:
+    type: "together"
+    api_key: "${TOGETHER_API_KEY}"
+    default_model: "togethercomputer/llama-2-70b"
+    cost_per_token: 0.0002
+    models:
+      - "togethercomputer/llama-2-70b"
+      - "togethercomputer/falcon-40b"
+  
+  anyscale:
+    type: "anyscale"
+    api_key: "${ANYSCALE_API_KEY}"
+    default_model: "meta-llama/Llama-2-70b-chat-hf"
+    cost_per_token: 0.0001
+    models:
+      - "meta-llama/Llama-2-70b-chat-hf"
+      - "meta-llama/Llama-2-13b-chat-hf"
+  
+  replicate:
+    type: "replicate"
+    api_key: "${REPLICATE_API_KEY}"
+    default_model: "meta/llama-2-70b-chat"
+    cost_per_token: 0.0002
+    models:
+      - "meta/llama-2-70b-chat"
+      - "stability-ai/stable-diffusion"
+  
+  deepinfra:
+    type: "deepinfra"
+    api_key: "${DEEPINFRA_API_KEY}"
+    default_model: "meta-llama/Llama-2-70b-chat-hf"
+    models:
+      - "meta-llama/Llama-2-70b-chat-hf"
+      - "mistralai/Mixtral-8x7B-Instruct-v0.1"

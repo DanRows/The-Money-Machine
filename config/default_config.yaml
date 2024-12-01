@@ -1,0 +1,17 @@
+app:
+  name: "The Money Machine"
+  version: "0.1.0"
+  environment: "development"
+
+inference_providers:
+  default_provider: "groq"
+  fallback_strategy: "round_robin"
+  providers:
+    groq:
+      enabled: true
+      type: "groq"
+      default_model: "mixtral-8x7b-32768"
+    anthropic:
+      enabled: true
+      type: "anthropic"
+      default_model: "claude-2" 

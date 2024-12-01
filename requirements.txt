@@ -1,0 +1,23 @@
+# Core Dependencies
+streamlit>=1.28.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pyyaml>=6.0.0
+
+# AI Engines
+openai>=1.0.0
+anthropic-claude>=0.3.0
+google-cloud-aiplatform>=1.0.0
+together>=0.2.0
+replicate>=0.15.0
+httpx>=0.24.0
+
+# Utils
+numpy>=1.24.0
+pandas>=2.0.0
+python-dateutil>=2.8.2
+
+# Development
+pytest>=7.0.0
+black>=23.0.0
+isort>=5.12.0

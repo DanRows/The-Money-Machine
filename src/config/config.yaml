@@ -1,0 +1,22 @@
+app:
+  name: "The Money Machine"
+  version: "0.1.0"
+
+engines:
+  openai:
+    api_key: "${OPENAI_API_KEY}"
+    model: "gpt-4"
+    temperature: 0.7
+  anthropic:
+    api_key: "${ANTHROPIC_API_KEY}"
+    model: "claude-2"
+
+workflows:
+  content_generation:
+    order:
+      - content_planner
+      - content_creator
+      - content_publisher
+    settings:
+      retry_attempts: 3
+      max_concurrent: 2
